@@ -27,8 +27,10 @@ public class Splash extends Activity {
                 }  catch(InterruptedException e){
                     e.printStackTrace();
                 }finally{
-                    Intent openStartingPoint = new Intent("com.example.ProteinTracker.MyActivity");
-                    startActivity(openStartingPoint);
+                    //Intent openStartingPoint = new Intent("com.example.ProteinTracker.MyActivity");
+                    //startActivity(openStartingPoint);
+                    startActivity(new Intent(Splash.this, MyActivity.class));
+                    finish();
                 }
             }
 
